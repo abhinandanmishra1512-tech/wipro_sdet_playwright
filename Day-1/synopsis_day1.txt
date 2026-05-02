@@ -1,0 +1,69 @@
+#Mathematical Operations:
+
+"Addition:", a+b;
+"Subtraction:", a-b;
+"Product:", a*b;
+"Division:", a/b;
+"Remainder:", a%b;
+
+
+
+#String operations:
+
+
+"Original String:", str;
+"Length of String:", str.length;
+"Uppercase:", str.toUpperCase();
+"Lowercase:", str.toLowerCase();
+"SubString:", str.substring(0,4);
+
+
+#logical operations
+
+a > b;
+a < b; 
+a == b; 
+a != b; 
+a >= b; 
+a <= b; 
+
+
+
+#TypeOf function
+typeof (str)
+
+
+
+#Object:
+
+
+let obj={name: "Alice", age : 30, Role: "Trainer"
+}
+
+
+
+#Simple Functions:
+function nameOfTheFunc(){
+    //code
+}
+
+
+
+#Array Basics:
+let arr = [1, 3,"Hey", true, 5];
+let arr2 = [1, 2, 3, 4, 5];
+
+
+#For-Each:
+forEach(func(x){ //code })
+
+
+
+#If-Else:
+First check the if condition and then go to the else block
+
+
+
+#Switch Case:
+
+switch(choice){ // Multiple Cases}
