@@ -1,32 +1,45 @@
 function getData(success) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-
             if (success) {
                 resolve("Data received");
             } else {
                 reject("Failed to fetch data");
             }
-
-        }, 2000);
+        }, 1000);
     });
 }
 
-// Calling Promise
-getData(false)
+// Problem:
+// Create a promise-based function that returns data when successful
+// and shows a useful error message when it fails.
+
+// Solution 1: Using .then() and .catch()
+getData(true)
     .then((data) => {
-        console.log(data);
+        console.log("Success:", data);
     })
     .catch((error) => {
         console.error("Error:", error);
     });
 
+getData(false)
+    .then((data) => {
+        console.log("Success:", data);
+    })
+    .catch((error) => {
+        console.error("Error:", error);
+    });
 
-// setTimeout(() => {
-//     console.log("Data received");
-// }, 5000);
+// Solution 2: Using async/await
+async function fetchData(success) {
+    try {
+        const data = await getData(success);
+        console.log("Async success:", data);
+    } catch (error) {
+        console.error("Async error:", error);
+    }
+}
 
-
-// setInterval(() => {
-//     console.log("Checking for new data...");
-// }, 3000);
+fetchData(true);
+fetchData(false);
