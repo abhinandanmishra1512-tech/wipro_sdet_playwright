@@ -1,0 +1,37 @@
+API: A set of rules that allows software applications to communicate with each other.
+Endpoint: A specific URL where an API can be accessed.
+Request: A message sent by a client to an API to get or send data.
+Response: The data returned by the API after processing a request.
+HTTP Methods: Actions like GET (fetch), POST (create), PUT (update), DELETE (remove).
+REST API: An API that follows REST architecture using HTTP methods.
+JSON: A lightweight format used to exchange data in APIs.
+Authentication: Verifying the identity of a user or application (e.g., API key, token).
+Authorization: Granting permission to access specific resources.
+API Key: A unique code used to identify and authenticate a user.
+Rate Limiting: Restricting the number of API requests in a given time.
+Status Codes: Numeric responses indicating success or error (e.g., 200, 404).
+Headers: Extra information sent with requests or responses.
+Payload: The actual data sent in a request or response.
+SDK: A toolkit that helps developers use APIs easily.
+Webhook: An API that sends real-time data automatically when an event occurs
+
+//1.PHOTOS
+// data → filter id ≤ 5 → map title & image → return
+//2.POKÉMON
+// data.results → filter names starting with "b" → map names → return
+//3.SPACE PEOPLE
+// data.people → map names → return (⚠️ HTTP may cause CORS issue)
+//4.QUOTES
+// data → filter quote length < 100 → map quote text → return (⚠️ API may block frontend requests)
+//5.UNIVERSITIES
+// data → filter name includes "Technology" → map names → return (⚠️ HTTP issue)
+//6.DOG FACTS
+// data.data → map fact body → return
+//7.CRYPTO
+// data → filter price > 1000 → map coin names → return (⚠️ consider adding per_page)
+//8.RANDOM USERS
+// data.results → filter female → map first names → return
+//9.COUNTRIES
+// data → ensure array → filter population > 100M → map country names → return
+//10.POSTS
+// data → filter userId = 1 → map titles → return (⚠️ not books)
