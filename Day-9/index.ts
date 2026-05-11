@@ -92,3 +92,20 @@ names.addItems("Dhruv");
 names.addItems("Rohan");
 
 console.log(names.getItem(0), names.getItem(1), names.getItem(2), names.getItem(3)); // undefined for index 3
+
+
+
+//Generics_with_constraints_with_extends_keyword
+//generics helps us for reusability 
+interface HasLength{
+    length: number;
+}
+
+function logLength<T extends HasLength>(args: T): void{
+    console.log(args.length);
+}
+//extends means: T must contain a length property
+
+logLength("Abhinandan");
+logLength([1,2,3,4,5,6]);
+// logLength(1); // would give us an error, as number doesn't have any length
