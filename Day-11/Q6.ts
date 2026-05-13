@@ -10,7 +10,7 @@ type D = UnwrapPromise<Promise<{ id: number; name: string }>>;
 const a: A = "hello";         
 const b: B = 42;              
 const c: C = "world";         
-const d: D = { id: 1, name: "Krishna" }; 
+const d: D = { id: 1, name: "Abhinandan" }; 
 
 console.log("UnwrapPromise results:");
 console.log("A (Promise<string>)  →", a);
@@ -20,11 +20,11 @@ console.log("D (Promise<object>)  →", d);
 
 
 async function getUser() {
-  return { id: 1, name: "Krishna" };
+  return { id: 1, name: "Abhinandan" };
 }
 
 type UserType = UnwrapPromise<ReturnType<typeof getUser>>;
 
 
-const user: UserType = { id: 1, name: "Krishna" };
+const user: UserType = { id: 1, name: "Abhinandan" };
 console.log("\nReal world usage:", user);

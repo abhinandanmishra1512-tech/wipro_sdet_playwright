@@ -30,7 +30,7 @@ type UserApiResponse = ApiResponse<User>;
 const userResponse: UserApiResponse = {
   DATA_ID: 1,
   DATA_NAME: "Abhinandan",
-  DATA_EMAIL: "abhinandan@example.com",
+  DATA_EMAIL: "Abhinandan@example.com",
 };
 
 console.log("UserApiResponse:", userResponse);

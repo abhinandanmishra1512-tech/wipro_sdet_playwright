@@ -1,5 +1,3 @@
-// q1.ts
-
 interface Album {
   userId: number;
   id: number;

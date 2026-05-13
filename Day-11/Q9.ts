@@ -6,7 +6,7 @@ interface UserMetadata {
 
 const meta: UserMetadata = {
   createdAt: new Date(),        
-  username: "krishna",          
+  username: "Abhinandan",          
   age: 25,                     
   isActive: true,               
   loginCount: 42,               
