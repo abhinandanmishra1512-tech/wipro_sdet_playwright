@@ -15,7 +15,7 @@ function safeExecute<T>(
 
 async function fetchUser(id: number): Promise<{ id: number; name: string }> {
   if (id <= 0) throw new Error("Invalid ID!");
-  return { id, name: "Krishna" };
+  return { id, name: "Abhinandan" };
 }
 
 

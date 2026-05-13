@@ -29,8 +29,8 @@ type UserApiResponse = ApiResponse<User>;
 
 const userResponse: UserApiResponse = {
   DATA_ID: 1,
-  DATA_NAME: "Krishna",
-  DATA_EMAIL: "krishna@example.com",
+  DATA_NAME: "Abhinandan",
+  DATA_EMAIL: "abhinandan@example.com",
 };
 
 console.log("UserApiResponse:", userResponse);
