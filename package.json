@@ -13,15 +13,16 @@
   },
   "license": "ISC",
   "author": "Abhinandan Mishra",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "dependencies": {
     "@types/node": "^25.7.0",
     "express": "^5.2.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
   }
 }
