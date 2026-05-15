@@ -22,7 +22,7 @@ const loginData = [
 ]
 loginData.forEach(async data => {
   test(`Checking Login form with ${data.username}, ${data.password}`, async ({ page }) => {
-    await page.goto('http://localhost:3000/login');
+    await page.goto('http://localhost:3000/login.html');
   
     const username = page.locator("#username");
     const password = page.locator("#password");
